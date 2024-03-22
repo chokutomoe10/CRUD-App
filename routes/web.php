@@ -31,18 +31,6 @@ Route::get('products', function () {
 Route::get('products/create', [ProductController::class, 'create']);
 Route::post('products/create', [ProductController::class, 'store']);
 
-// Route::get('productone', function () {
-//     return Product::create([
-//         'name' => 'shoes two',
-//         'description' => 'shoes description',
-//         'small_description' => 'shoes small description',
-//         'original_price' => 599,
-//         'price' => 459,
-//         'stock' => 40,
-//         'is_active' => 1,
-//     ]);
-// });
-
 Route::get('/', function () {
     return view('frontend.index');
 });

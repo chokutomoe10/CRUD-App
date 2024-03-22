@@ -1,11 +1,5 @@
 <x-app-web-layout>
-
-    <!-- cara1 -->
-    <!-- <x-slot name="title">
-        My Laravel App
-    </x-slot> -->
-
-    <!-- cara2 -->
+    
     <x-slot:title>
         My Laravel App
     </x-slot>

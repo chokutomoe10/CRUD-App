@@ -15,17 +15,6 @@
                         <div class="alert alert-success">{{ session('status') }}</div>
                     @endif
 
-                    <!-- cara 1 -->
-                    <!-- @if ($errors->any())
-                    <div>
-                        <ul class="alert alert-danger">
-                            @foreach ($errors->all() as $error)
-                            <li>{{$error}}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                    @endif -->
-
                     <div class="card mt-4">
                         <div class="card-body">
 

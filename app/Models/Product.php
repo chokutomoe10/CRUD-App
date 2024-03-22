@@ -12,8 +12,6 @@ class Product extends Model
 
     protected $table = 'products';
 
-    // protected $primaryKey = 'id'; ini opsional
-
     protected $fillable = [
         'name',
         'slug',
@@ -40,21 +38,16 @@ class Product extends Model
         'name_price'
     ];
 
-    // Ini juga Accessor
     public function getNamePriceAttribute()
     {
         return $this->name . ' - ' . $this->price;
     }
 
-    // Accessors and Mutators
-
-    // Accessor
     public function getNameAttribute()
     {
         return ucfirst($this->attributes['name']);
     }
 
-    // Mutator
     public function setNameAttribute($value)
     {
         $this->attributes['name'] = strtoupper($value);
